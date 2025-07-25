@@ -2,10 +2,10 @@
  * Binary Search
  * Time complexity: O(log n)
  * Space complexity: O(1)
- * 
- * @param arr 
- * @param target 
- * @returns 
+ *
+ * @param arr
+ * @param target
+ * @returns
  */
 export default function binarySearch(arr: number[], target: number): number {
   if (arr.length === 0) {
@@ -21,8 +21,8 @@ export default function binarySearch(arr: number[], target: number): number {
 
   console.log(
     `start: ${start}, end: ${end}, midPoint: ${Math.floor(
-      start + (end - start) / 2
-    )}, value: ${arr[Math.floor(start + (end - start) / 2)]}`
+      start + (end - start) / 2,
+    )}, value: ${arr[Math.floor(start + (end - start) / 2)]}`,
   );
 
   do {
@@ -40,7 +40,7 @@ export default function binarySearch(arr: number[], target: number): number {
       start = midPoint + 1;
     }
     console.log(
-      `start: ${start}, end: ${end}, midPoint: ${midPoint}, value: ${value}`
+      `start: ${start}, end: ${end}, midPoint: ${midPoint}, value: ${value}`,
     );
   } while (start < end);
 
