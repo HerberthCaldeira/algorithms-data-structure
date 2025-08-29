@@ -27,6 +27,6 @@ class Solution {
   }
 }
 
-const solution = new Solution();
+const s = new Solution();
 
-console.log(solution.isAnagram("anagram", "nagaram"));
+console.log(s.isAnagram("anagram", "nagaram"));
