@@ -1,10 +1,9 @@
-class Solution {
   /**
    * @param {number[]} nums
    * @param {number} target
    * @return {number[]}
    */
-  twoSum(nums: number[], target: number): number[] {
+  function twoSum(nums: number[], target: number): number[] {
     console.log(nums);
     let map = new Map();
     for (let i = 0; i <= nums.length; i++) {
@@ -17,8 +16,6 @@ class Solution {
     }
     return [];
   }
-}
 
-const solution = new Solution();
 
-console.log(solution.twoSum([2, 7, 11, 15], 26)); //expect: [2, 3]
+console.log(twoSum([2, 7, 11, 15], 26)); //expect: [2, 3]
